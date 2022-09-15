@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useCallback, useEffect, useState } from "react";
 import logo from "./../assets/logo.webp";
-const baseURL = "http://localhost:5000/getTotalData";
+const baseURL = "https://oni-backend.vercel.app/getTotalData";
 // eslint-disable-next-lines
 const Interface = () => {
   const [refetch, setRefetch] = useState(true);
