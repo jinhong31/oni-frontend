@@ -21,44 +21,85 @@ body {
 
 }
 
-.elementor-icon i, .elementor-icon svg {
+.elementor-icon i,
+.elementor-icon svg {
   width: 1em;
   height: 1em;
   position: relative;
   display: block;
 }
 
+.red {
+  color: red;
+}
+
+.green {
+  color: #0EF12D;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.font-size-27 {
+  font-size: 27px;
+}
+
+.font-size-35 {
+  font-size: 35px;
+}
 .elementor-heading-title {
-  color: #E40404;
-  font-family: "Island Moments", Sans-serif;
+  padding-top: 15px;
+  color: #FFFFFF;
+  font-family: "K2D", Sans-serif;
+  font-size: 38px;
   font-weight: 600;
 }
 
+.elementor-title {
+  color: #FFFFFF;
+  font-family: "K2D", Sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 1.2em;
+  letter-spacing: 0.6px;
+  width: 550px;
+  text-align: justify;
+  padding-bottom: 10px;
+}
+
+.elementor-title-div {
+  /* width: 500px; */
+  display: flex;
+  justify-content: center;
+  /* padding-right: 200px; */
+}
 .social-icons {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-h2{
+h2 {
   font-size: 48px;
 }
 
 .state-icon {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
 
 }
-.active-icon {
-  background-color: green;
+
+.background-green {
+  background-color: #0EF12D;
 }
 
-.inactive-icon {
+.background-red {
   background-color: red;
 }
 
-.before-icon {
+.background-yellow {
   background-color: yellow;
 }
 
@@ -71,32 +112,55 @@ h2{
   display: flex;
   align-items: center;
   margin: 0 auto;
+  border-color: #0EF12D;
+  border-width: 3px;
+  border-radius: 5px;
+  border-style: solid;
+  padding: 5px 40px;
 }
+
 .state-statement {
-  color: rgb(16, 240, 83);
-  font-size: 35px;
-  font-family: "Island Moments", Sans-serif;
+  font-family: "K2D", Sans-serif;
   margin-bottom: 0;
+  line-height: 1;
 }
 
 .state-error {
   color: red;
   font-size: 35px;
-  font-family: "Island Moments", Sans-serif;
+  font-family: "K2D", Sans-serif;
   margin-bottom: 0;
 }
+
 .connection-state {
   color: yellow;
   font-size: 35px;
-  font-family: "Island Moments", Sans-serif;
+  font-family: "K2D", Sans-serif;
 }
+
+.zoom-in-out-circle {
+  animation: zoom-in-zoom-out 2s ease infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(0.9, 0.9);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(0.9, 0.9);
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .btnd {
     width: 100%;
     margin-bottom: 5px;
   }
 
-  h2{
+  h2 {
     font-size: 36px;
   }
 }
