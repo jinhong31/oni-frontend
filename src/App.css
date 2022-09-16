@@ -37,6 +37,9 @@ body {
   color: #0EF12D;
 }
 
+.yellow {
+  color: yellow;
+}
 .bold {
   font-weight: 800;
 }
@@ -103,6 +106,13 @@ h2 {
   background-color: yellow;
 }
 
+.border-red {
+  border-color: red;
+}
+
+.border-green {
+  border-color: #0EF12D;
+}
 .state-div {
   padding-left: 40px;
 }
@@ -112,7 +122,6 @@ h2 {
   display: flex;
   align-items: center;
   margin: 0 auto;
-  border-color: #0EF12D;
   border-width: 3px;
   border-radius: 5px;
   border-style: solid;

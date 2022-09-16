@@ -25,7 +25,7 @@ const Interface = () => {
     const jeetTimer = async () => {
       if (jeetState) return;
       // setCountTime(countTime - 1)
-      if(countTime != null) {
+      if (countTime != null) {
         startTimer(countTime);
       }
 
@@ -81,8 +81,8 @@ const Interface = () => {
 
         <div style={{ textAlign: "center" }}>
 
-          <div className="state-content">
-            <div className={`state-icon ${jeetState ? "zoom-in-out-circle": ""} ${tradingState ? jeetState? "background-green zoom-in-out-circle" : "background-green" : "background-yellow zoom-in-out-circle"}`} />
+          {/* <div className="state-content border-green">
+            <div className={`state-icon  ${tradingState ? jeetState ? "background-green zoom-in-out-circle" : "background-green" : "background-yellow zoom-in-out-circle"}`} />
             <div className="state-div">
               {tradingState ? (
                 <>
@@ -93,13 +93,35 @@ const Interface = () => {
             </div>
           </div>
           <br />
-          <div className="state-content">
-            <div className={`state-icon background-red ${tradingState && !jeetState ? "zoom-in-out-circle" : ""}`}/>
+          <div className={`state-content ${tradingState && !jeetState ? "border-red" : "border-green"} border-red `}>
+            <div className={`state-icon background-red ${tradingState && !jeetState ? "zoom-in-out-circle" : ""}`} />
             <div className="state-div">
               <p className="state-statement red font-size-27">Trading Is Temporarily</p><p className="state-statement red font-size-27"> Disabled For:</p>
               <div className="count-down">
                 <h2>{timer}</h2>
               </div>
+            </div>
+          </div> */}
+
+          <div className={`state-content ${tradingState && !jeetState ? "border-red" : "border-green"} border-red `}>
+            <div className={`state-icon zoom-in-out-circle ${tradingState ? !jeetState ? "background-red" : "background-green" : "background-yellow"}`} />
+            <div className="state-div">
+              {tradingState ? (
+                jeetState ? (
+                  <>
+                    <p className="state-statement green font-size-35">Trading Is</p>
+                    <p className="state-statement green font-size-35"> Currently Active!</p>
+                  </>
+                ) : (
+                  <>
+                    <p className="state-statement red font-size-27">Trading Is Temporarily</p><p className="state-statement red font-size-27"> Disabled For:</p>
+                    <div className="count-down">
+                      <h2>{timer}</h2>
+                    </div>
+                  </>
+                )
+
+              ) : <p className="state-statement yellow font-size-35">Coming Soon!</p>}
             </div>
           </div>
           <br />
