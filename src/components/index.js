@@ -25,7 +25,7 @@ const Interface = () => {
     const jeetTimer = async () => {
       if (jeetState) return;
       // setCountTime(countTime - 1)
-      if (countTime != null) {
+      if (countTime !== null) {
         startTimer(countTime);
       }
 
