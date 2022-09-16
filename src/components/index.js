@@ -79,7 +79,7 @@ const Interface = () => {
         <div style={{ textAlign: "center" }}>
 
           <div className="state-content">
-            <div className={`state-icon ${jeetState ? "zoom-in-out-circle": ""} ${tradingState ? "background-green " : "background-yellow"}`} />
+            <div className={`state-icon ${jeetState ? "zoom-in-out-circle": ""} ${tradingState ? jeetState? "background-green zoom-in-out-circle" : "background-green" : "background-yellow zoom-in-out-circle"}`} />
             <div className="state-div">
               {tradingState ? (
                 <>
@@ -91,7 +91,7 @@ const Interface = () => {
           </div>
           <br />
           <div className="state-content">
-            <div className={`state-icon background-red ${jeetState ? "" : "zoom-in-out-circle"}`}/>
+            <div className={`state-icon background-red ${tradingState && !jeetState ? "zoom-in-out-circle" : ""}`}/>
             <div className="state-div">
               <p className="state-statement red font-size-27">Trading Is Temporarily</p><p className="state-statement red font-size-27"> Disabled For:</p>
               <div className="count-down">
