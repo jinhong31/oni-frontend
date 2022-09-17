@@ -109,7 +109,7 @@ const Interface = () => {
           </div> */}
           <h2 className="elementor-heading-title font-size-22 bold-600">Welcome to $ONI (Naita-Aka-Oni),<br />The best anti-jeet ERC20!</h2>
           <h2 className="elementor-heading-title font-size-22 bold-600 green padding-top-10 ">Contract Address:</h2>
-          <h2 className="elementor-heading-title font-size-22 bold-600 green padding-bottome-10 ">0x0000000000000000000000000</h2>
+          <h2 className="elementor-heading-title font-size-13 bold-600 green padding-bottome-10 ">0x652555613F20d82e33399d37A8e788602961292c</h2>
           <h2 class="elementor-heading-title font-size-20 bold-100 padding-bottom-13">Sell status indicator:</h2>
           <div className={`state-content ${tradingState && !jeetState ? "border-red" : "border-green"} border-red `}>
             <div className="state-dev  margin-top-10">
@@ -147,7 +147,7 @@ const Interface = () => {
         <div className="elementor-title-div">
           <h2 className="elementor-title">If and only if there are to be exactly <font className="red bold">6 sell transactions</font> that occur within no more than <font className="green bold">3 minutes</font> of each other, selling for all holders will be completely disabled for <font class="red bold">9 minutes</font>. After 9 minutes, <font className="green bold">selling will be allowed</font> again, and thus, the cycle will continue <font className="bold">automatically</font> and <font className="bold">autonomously</font>.</h2>
         </div>
-        <iframe loading="lazy" border="0" style={{ border: "none", borderRadius: "12px", overflow: "hidden", maxWidth: "100%", maxHeight: "760px" }} scrolling="no" src="https://app.uniswap.org/#/swap?theme=dark&amp;use=v2&amp;slippage=10.00&amp;inputCurrency=ETH&amp;outputCurrency=0x8E45b97209CE2B6a3fF3Db9fa93960B33B232A42" width="1200" height="720"></iframe>
+        <iframe loading="lazy" border="0" style={{ border: "none", borderRadius: "12px", overflow: "hidden", maxWidth: "100%", maxHeight: "760px" }} scrolling="no" src="https://app.uniswap.org/#/swap?theme=dark&amp;use=v2&amp;slippage=10.00&amp;inputCurrency=ETH&amp;outputCurrency=0x652555613F20d82e33399d37A8e788602961292c" width="1200" height="720"></iframe>
         <h2 className="elementor-heading-title font-size-38 bold-600 padding-top-15 ">Join The $ONI Community:</h2>
         <br />
         <div className="social-icons">
